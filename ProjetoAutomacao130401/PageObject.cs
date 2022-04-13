@@ -86,7 +86,7 @@ namespace ProjetoAutomacao130401
             string cidade = driver.FindElement(By.Id("VehiclePrincipalInformationState")).Text;
             Assert.AreEqual(cidade, "São Paulo, SP");
 
-            string modelo = driver.FindElement(By.Id("VehicleBasicInformationTitle")).Text;
+            string modeloVeiculo = driver.FindElement(By.Id("VehicleBasicInformationTitle")).Text;
             Assert.AreEqual(modelo, "HONDA CITY\r\n1.5 EX 16V FLEX 4P MANUAL");
 
             string versao = driver.FindElement(By.Id("VehicleBasicInformationDescription")).Text;
